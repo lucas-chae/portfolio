@@ -1,0 +1,364 @@
+.container-fluid {
+    background-color: #F6F5F3;
+}
+
+nav>.container {
+    width: 95%;
+    margin: 0 auto;
+    clear: both;
+}
+
+nav a {
+    display: inline-block;
+    color: #F6F5F3;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+}
+
+nav {
+    background: #7FCE95;
+    opacity: 0.9;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+    transition: all 0.5s;
+}
+
+nav.scrollUp {
+    transform: translateY(-80px);
+}
+
+nav ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+
+nav ul.navbar-menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul.navbar-menu li a {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav a#brand {
+    text-transform: uppercase;
+    float: left;
+    font-weight: 200;
+    font-size: 36px;
+}
+
+nav button {
+    background: #7FCE95;
+    width: 44px;
+    height: 40px;
+    margin-top: 0px;
+    border: none;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 40px;
+    height: 2px;
+    background: #333;
+    display: block;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul.navbar-menu {
+        display: none;
+    }
+    nav button {
+        display: block;
+        float: right;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    text-transform: uppercase;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover,
+.dropdown a:active {
+    background-color: #f1f1f1
+}
+
+.show {
+    display: block;
+}
+
+.shadow {
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    -webkit-filter: drop-shadow( -0px 5px 8px #7FCE95);
+    filter: drop-shadow( -0px 5px 8px #7FCE95);
+}
+
+@media screen and (min-width:576px) {
+    #tree {
+        position: absolute;
+        top: 40%;
+        left: 51%;
+        width: 500px;
+        height: 500px;
+        margin-top: 80px;
+        margin-left: -250px;
+        /* Half the width */
+    }
+}
+
+@media screen and (max-width:576px) {
+    #tree {
+        position: absolute;
+        top: 25%;
+        left: 53%;
+        width: 360px;
+        height: 360px;
+        margin-top: 15vh;
+        margin-left: -180px;
+        /* Half the width */
+    }
+}
+
+@media screen and (min-width:574px) {
+    #headline {
+        font-family: 'Raleway';
+        font-size: 80px;
+        margin-top: 78vh;
+        color: #3D3D3F;
+        font-weight: 200;
+        text-align: center;
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (max-width:574px) {
+    #headline {
+        font-family: 'Raleway';
+        font-size: 48px;
+        margin-top: 75vh;
+        color: #3D3D3F;
+        font-weight: 200;
+        text-align: center;
+        padding-bottom: 200px;
+    }
+}
+
+.port {
+    text-align: center;
+    
+}
+
+@media screen and (max-width:992px) {
+    #work-on-progress img {
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: 100%;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    #work-completed img {
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: 65%;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #work-on-progress div img {
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: 85%;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    #work-completed .left img {
+        padding-right: 0px;
+        padding-left: 4.5vw;
+        max-width: 90%;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        margin-left: 3.8vw;
+    }
+    #work-completed .right img {
+        padding-right: 4.5vw;
+        padding-left: 0px;
+        max-width: 90%;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        margin-right: 3.8vw;
+    }
+}
+
+.godown {
+    text-align: center;
+    margin-top: -222px;
+    font-size: 40px;
+}
+
+#flipwords .div {
+    display: inline;
+    text-align: center;
+}
+
+@media screen and (min-width:992px) {
+.front-letter {
+    color: #F6F5F3;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size:28px;
+    margin: 0;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:100;
+    font-weight: 500;
+}
+
+.back-letter {
+    
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 20vh;
+    font-weight: 800;
+    opacity: 0.4;
+     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+}
+
+
+
+
+@media screen and (max-width:992px) {
+.front-letter {
+    color: #F6F5F3;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size:20px;
+    margin: 0;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:100;
+    font-weight: 500;
+}
+
+.back-letter {
+    
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 16vh;
+    font-weight: 800;
+    opacity: 0.4;
+     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+}
+
+
+.block-contain {
+    height: 360px;
+    width: 100%;
+    
+    position: relative;
+    background-color: #7FCE95;
+}
+.godown i {
+    -webkit-animation: flash linear 1.2s infinite;
+    animation: flash linear 1.2s infinite;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.iAmRibbon1 {
+    margin-top:-100px;
+    margin-bottom: -100px;
+    position: relative;
+    height: 22vh;
+    background-color: #7FCE95;
+    transform: skew(0deg, -5deg);
+    z-index: 3;
+}
+
+#second-row {
+    margin-top:10px;
+    padding-top:200px;
+}
+
+
+
+
+
+
